@@ -41,6 +41,12 @@ To install git, run the below commands in the terminal window:
 sudo apt-get update -y
 sudo apt-get install git -y
 ```
+OR
+
+```sh
+sudo apt-get update -y
+sudo apt-get install git -y
+```
 
 Verify if the system has git installed by running the below command in the terminal:
 
