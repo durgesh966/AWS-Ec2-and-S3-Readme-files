@@ -1,4 +1,4 @@
-Certainly! Below is the `README.md` file for hosting a simple Node.js application on an AWS EC2 Ubuntu machine.
+This is the `README.md` file for hosting a simple Node.js application on an AWS EC2 Ubuntu machine.
 
 ```markdown
 # Node.js Hello World
