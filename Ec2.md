@@ -1,6 +1,5 @@
-Sure! Below is the updated `README.md` file with instructions to add an inbound rule to your AWS EC2 security group.
+This is the updated `README.md` file with instructions to add an inbound rule to your AWS EC2 security group.
 
-```markdown
 # Node.js Hello World
 
 This is a simple Node.js app that serves "A Monk in Cloud". It's great for testing simple deployments on the cloud.
