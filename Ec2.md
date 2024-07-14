@@ -1,4 +1,4 @@
-This is the `README.md` file for hosting a simple Node.js application on an AWS EC2 Ubuntu machine.
+Sure! Below is the updated `README.md` file with instructions to add an inbound rule to your AWS EC2 security group.
 
 ```markdown
 # Node.js Hello World
@@ -38,8 +38,8 @@ npm -v
 To install git, run the below commands in the terminal window:
 
 ```sh
-sudo apt-get update -y
-sudo apt-get install git -y
+apt-get update -y
+apt-get install git -y
 ```
 OR
 
@@ -69,7 +69,23 @@ cd nodejs-on-ec2
 npm install
 ```
 
-## Step 3: Start the Application
+## Step 3: Configure AWS EC2 Security Group Inbound Rules
+
+To allow inbound traffic to your Node.js application, you need to add an inbound rule to your EC2 instance's security group.
+
+1. Go to the [AWS Management Console](https://aws.amazon.com/console/).
+2. Navigate to the EC2 Dashboard.
+3. In the left-hand menu, click on `Instances` and select your instance.
+4. In the Description tab, find the `Security groups` and click on the security group associated with your instance.
+5. In the security group details, go to the `Inbound rules` tab and click on `Edit inbound rules`.
+6. Click on `Add rule` and set the following values:
+    - **Type:** Custom TCP
+    - **Protocol:** TCP
+    - **Port range:** 3000 (or whichever port your Node.js app is running on)
+    - **Source:** Custom (0.0.0.0/0 to allow traffic from anywhere, or specify an IP range)
+7. Click on `Save rules`.
+
+## Step 4: Start the Application
 
 To start the application, run the below command in the terminal:
 
@@ -79,7 +95,7 @@ npm start
 
 ## Conclusion
 
-This README.md file guides you through the steps to host a new Node.js project on an AWS EC2 Ubuntu machine.
+This README.md file guides you through the steps to host a new Node.js project on an AWS EC2 Ubuntu machine, including setting up necessary inbound rules in the security group.
 ```
 
-Replace the `nodejs-on-ec2` GitHub URL with your own repository if needed. This README.md file provides a clear step-by-step guide to set up and run your Node.js application on an AWS EC2 Ubuntu machine.
+This updated README includes the steps to configure inbound rules for your EC2 instance, ensuring that your Node.js application can be accessed over the network.
